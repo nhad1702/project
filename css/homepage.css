@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     --gx-accent-color: hsla(264, 100%, 72%, 1);
     --gx-highlight-color: hsla(264, 100%, 72%, 0.5);
     --gx-primary-button-font-color: white;
@@ -22,11 +23,12 @@
     --gx-button-background-hover-color: hsla(248, 40%, 32%, 1);
     --gx-button-background-focus-color: hsla(248, 40%, 59%, 1);
     --gx-separator-color: hsla(248, 40%, 32%, 1);
+    --beta-badge-color: var(--gx-primary-background-color);
+    --beta-badge-background: var(--gx-primary-background-color)
 }
 
 body {
     background-color: var(--background);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     height: 100%;
     margin: 0;
 }
@@ -37,14 +39,47 @@ body {
     color: inherit;
     border-bottom: 1px solid var(--separator-color);
     background-color: var(--secondary-background-color);
+    background: #1c1d1f;
 }
 
-.btn {
+.total1 {
+    height: 72px;
+    padding: 0 24px;
+    min-height: 64px;
+}
+
+.btn1 {
     outline: 0;
     user-select: none;
     vertical-align: middle;
     text-decoration: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: var(--gx-secondary-button-color);
+    line-height: 1.75;
+    border-radius: 4px;
+    margin: 0 16px;
+    padding: 4px 8px;
+    min-width: 80px;
+    font-size: 0.8125rem;
+}
+
+.span1 {
+    background: #ced1d2;
+}
+
+.div1 {
+    height: 24px;
+    width: 24px;
+}
+
+.name {
+    background: #ffffff;
+    padding: 8px 16px;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.name1 {
+    font-size: 10px;
+    color: var(--beta)
 }
