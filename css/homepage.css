@@ -26,6 +26,8 @@
     --beta-badge-color: var(--gx-primary-background-color);
     --beta-badge-background: var(--gx-primary-background-color);
     --primary-font-color: var(--gx-primary-font-color);
+    --input-border-color: var(--gx-input-border-color);
+    --input-background-color: var(--gx-input-background-color);
 }
 
 body {
@@ -136,4 +138,43 @@ div {
     width: 1rem;
     height: 1rem;
     transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.div2 {
+    max-width: 50%;
+}
+
+.div3 {
+    border: 1px solid var(--input-border-color);
+    height: 30px;
+    max-width: 320px;
+    background: var(--input-background-color);
+    border-radius: 6px;
+    margin-bottom: 8px;
+    color: #ffffff;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.div4 {
+    width: calc(100% - 40px - 16px);
+}
+
+.div5 {
+    left: 10px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #ffffff;
+}
+
+.input1 {
+    font: inherit;
+    color: currentColor;
+    border: 0;
+    height: 1.1876rem;
+    padding: 6px 0 7px;
+    min-width: 0;
+    background: none;
+    animation-name: mui-atuo-fill-cancel;
+    letter-spacing: inherit;
+    animation-duration: 10ms;
 }
